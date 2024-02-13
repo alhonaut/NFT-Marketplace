@@ -1,17 +1,13 @@
 "use client"
 import { useRef, useEffect, useContext, useState } from "react"
-import Web3, { WebSocketProvider } from "web3"
+import Web3 from "web3"
 import { marketplaceAddress, marketplaceAbi, nftAbi } from "@/constants"
 import { NftContext } from "@/context/nftContext"
 import { useAccount } from "wagmi"
 
 let accounts, contract, web3, nftContract
 async function _beforeStartInitialization() {
-    if (typeof window.ethereum !== "undefined") {
-        web3 = new Web3(window.ethereum)
-    } else {
-        web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
-    }
+    web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
     accounts = await web3.eth.getAccounts()
     contract = new web3.eth.Contract(marketplaceAbi, marketplaceAddress)
 }
