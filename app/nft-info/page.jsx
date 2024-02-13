@@ -199,4 +199,3 @@ export default function NftInfoWindow() {
         </PageTransition >
     )
 }
-//border-2 border-black bg-gradient-to-t from from-purple-950 via-violet-950 to-fuchsia-950 rounded-2xl w-8/12 md:w-full mx-auto justify-center items-center md:ml-0
