@@ -65,7 +65,7 @@ export default function Nft({ name, seller, description, price, image, childFunc
         }
 
         const queryUrl = new URLSearchParams(queryParams).toString()
-        router.push(`http://localhost:3000/nft-info?${queryUrl}`)
+        router.push(`https://nft-marketplace-kappa-flame.vercel.app/nft-info?${queryUrl}`)
     }
 
     return (
