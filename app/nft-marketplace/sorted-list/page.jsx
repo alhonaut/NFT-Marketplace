@@ -14,7 +14,7 @@ import { marketplaceAddress, marketplaceAbi } from "@/constants"
 
 let web3, contract
 async function _beforeStartInitialization() {
-    web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
+    web3 = new Web3("wss://eth-sepolia.g.alchemy.com/v2/uu7wwXlSQWxZ7bwhzqMV2IERSlEsdohP")
     contract = new web3.eth.Contract(marketplaceAbi, marketplaceAddress)
 }
 _beforeStartInitialization()
