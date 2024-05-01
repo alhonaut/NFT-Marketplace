@@ -10,7 +10,7 @@ async function _beforeStartInitialization() {
     if (window.ethereum) {
         web3 = new Web3(window.ethereum)
     } else {
-        web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
+        web3 = new Web3("wss://eth-sepolia.g.alchemy.com/v2/uu7wwXlSQWxZ7bwhzqMV2IERSlEsdohP")
     }
     accounts = await web3.eth.getAccounts()
     contract = new web3.eth.Contract(marketplaceAbi, marketplaceAddress)
