@@ -40,7 +40,7 @@ export default function NftProvider({ children }) {
     async function getNftList() {
         let web3, contract, nftContract
 
-        web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
+        web3 = new Web3("wss://eth-sepolia.g.alchemy.com/v2/uu7wwXlSQWxZ7bwhzqMV2IERSlEsdohP")
         contract = new web3.eth.Contract(marketplaceAbi, marketplaceAddress)
 
         let NftList = await contract.getPastEvents("ItemListed", {
