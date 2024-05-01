@@ -1,4 +1,4 @@
-export const marketplaceAddress = "0x744EB9F47bbAA2A4975033385c9814eEF5067Dc0";
+export const marketplaceAddress = "0x154A6CF47011A8C6b8abc5049030870D08DBf2aE";
 export const marketplaceAbi = [
     {
         "inputs": [
