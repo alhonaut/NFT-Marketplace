@@ -17,8 +17,8 @@ async function _beforeStartInitialization() {
         web3 = new Web3(window.ethereum)
         chainId = await web3.eth.getChainId()
     } else {
-        web3 = new Web3("wss://eth-goerli.g.alchemy.com/v2/ZRVf6BagEk3VCqFlj7OKlq_jZUznQsGD")
-        chainId = 5
+        web3 = new Web3("wss://eth-sepolia.g.alchemy.com/v2/uu7wwXlSQWxZ7bwhzqMV2IERSlEsdohP")
+        chainId = 11155111
     }
     accounts = await web3.eth.getAccounts()
     contract = new web3.eth.Contract(marketplaceAbi, marketplaceAddress)
